@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Apache Derby (Remote) - todoDB@localhost">
+  <database-model serializer="dbm" dbms="DERBY" family-id="DERBY" format-version="4.19">
+    <root id="1">
+      <ServerVersion>10.15.2.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="APP"/>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <schema id="13" parent="1" name="TEST">
+      <Current>1</Current>
+    </schema>
+    <table id="14" parent="13" name="TODO"/>
+    <column id="15" parent="14" name="ID">
+      <Position>1</Position>
+      <DataType>BIGINT|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+      <DefaultExpression>GENERATED_BY_DEFAULT</DefaultExpression>
+    </column>
+    <column id="16" parent="14" name="DESCRIPTION">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="17" parent="14" name="SUMMARY">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="18" parent="14" name="SQL0000000081-2ded81a4-0174-9b9f-e609-000043496532">
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="19" parent="14" name="SQL0000000081-2ded81a4-0174-9b9f-e609-000043496532">
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
